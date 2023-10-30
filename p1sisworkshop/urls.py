@@ -34,4 +34,7 @@ urlpatterns = [
     path('signup/', Signup.as_view(), name="signup"),
     path('signin/', Signin.as_view(), name="signin"),
     path('signout/', CoursesMain.signout, name="signout"),
+    
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
