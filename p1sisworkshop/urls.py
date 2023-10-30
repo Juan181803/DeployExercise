@@ -21,6 +21,9 @@ from courses.views.courses_create import CoursesCreate
 from courses.views.courses_main import CoursesMain
 from courses.views.signin import Signin
 from courses.views.signup import Signup
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 
 urlpatterns = [
